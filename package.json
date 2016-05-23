@@ -1,5 +1,5 @@
 {
-  "name": "hukamnama.js",
+  "name": "hukamnama",
   "version": "1.0.0",
   "description": "CLI app to fetches hukamnama from api.sikher.com",
   "main": "index.js",
