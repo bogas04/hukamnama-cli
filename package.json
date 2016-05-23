@@ -1,0 +1,16 @@
+{
+  "name": "hukamnama.js",
+  "version": "1.0.0",
+  "description": "CLI app to fetches hukamnama from api.sikher.com",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bogas04",
+  "license": "ISC",
+  "dependencies": {
+    "fs-promise": "^0.5.0",
+    "node-fetch": "^1.5.2"
+  }
+}
