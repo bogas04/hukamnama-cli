@@ -4,7 +4,7 @@ Fetches hukamnama on basis of ang number provided by user. The service relies on
 # Installation
 
 * Install [NodeJS](http://nodejs.org/) (v6 or above)
-* Open terminal/command prompt and enter `npm install hukamnama-cli -g`
+* Open terminal/command prompt and enter `npm install hukamnama -g`
 * Use hukamnamajs as `hukamnama <ang number> <filename>`
 
 # Usage
