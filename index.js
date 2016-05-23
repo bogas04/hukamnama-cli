@@ -8,8 +8,10 @@ const fs = require('fs-promise');
 const ang = process.argv[2];
 const filename = process.argv[3];
 
-const defaultFilename = (d = new Date()) => `Hukamnama ${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}.txt`;
+const defaultFilename = (d = new Date()) => `Hukamnama.txt`;
 const randomAng = 1 + parseInt(Math.random()*1430);
+
+console.log("Waheguru Ji Ka Khalsa Waheguru Ji Ki Fateh!");
 
 const getHukamnama = (ang = randomAng) => {
   console.log(`Fetching ang ${ang}`);
@@ -19,13 +21,12 @@ const getHukamnama = (ang = randomAng) => {
     .then(r => r.json())
     .then(lines => {
       console.log(`Downloaded hymn ${lines[0].hymn}`);
-      return Promise.resolve(lines.reduce((para, line) => para += `${line.text}\n\t${line.translation.text}\n`, ''));
+      return Promise.resolve(lines.reduce((para, line) => para += `\t${line.text}\n\r${line.translation.text}\n\r`, ''));
     });
 };
 
 const saveHukamnama = (ang = randomAng, filename = defaultFilename()) => getHukamnama(ang)
   .then(hukamnama => {
-    console.log(hukamnama);
     return fs.writeFile(filename, hukamnama, 'utf8')
   })
   .catch(e => console.log(`Error: ${e}, ${JSON.stringify(e, null, 2)}`));
