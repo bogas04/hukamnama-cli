@@ -5,15 +5,17 @@ Fetches hukamnama on basis of ang number provided by user. The service relies on
 
 * Install [NodeJS](http://nodejs.org/) (v6 or above)
 * Open terminal/command prompt and enter `npm install hukamnama -g`
-* Use hukamnamajs as `hukamnama <ang number> <filename>`
+* Use hukamnamajs as `hukamnama <hymn number> <filename>`
 
 # Usage
 
-* Not providing &lt;ang number&gt; will open random ang
-* Not providing &lt;filename&gt; will save hukamnama as Hukamnama DD-MM-YYYY.txt
+* Not providing &lt;Hymn number&gt; will open random ang
+* Not providing &lt;filename&gt; will save hukamnama as Hukamnama.txt
 
 # Changelog
 
+* 1.0.2
+  * Since hukamnama isn't always the last hymn of the ang, app requests you to give hymn number instead. You can find hymn number on popular websites like granth.co etc.
 * 1.0.1
   * Default filename is Hukamnama.txt
   * Gurmukhi is prefixed with 5 spaces while english translation isn't
