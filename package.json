@@ -1,6 +1,6 @@
 {
-  "name": "hukamnama",
-  "version": "1.0.1",
+  "name": "hukamnama-cli",
+  "version": "1.0.5",
   "description": "CLI app to fetches hukamnama from api.sikher.com",
   "main": "index.js",
   "bin": "./index.js",
@@ -8,6 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "bogas04",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bogas04/hukamnama-cli"
+  },
   "license": "ISC",
   "dependencies": {
     "fs-promise": "^0.5.0",
